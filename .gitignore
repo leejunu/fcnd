@@ -1,0 +1,55 @@
+# Bytecode and interpreter caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test, lint, type-check, and coverage caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Build and packaging artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments and local Python version managers
+.venv/
+venv/
+env/
+ENV/
+
+# Notebook checkpoints and local Jupyter state
+.ipynb_checkpoints/
+
+# Documentation build outputs
+site/
+docs/_build/
+
+# Native extension artifacts
+*.so
+*.dylib
+*.dll
+
+# Local OS/editor/project files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example

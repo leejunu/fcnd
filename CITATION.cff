@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "fcnd: Full conformal novelty detection"
+message: "If you use fcnd, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: Lee
+    given-names: Junu
+    email: junulee@wharton.upenn.edu
+  - family-names: Popov
+    given-names: Ilia
+  - family-names: Ren
+    given-names: Zhimei
+license: MIT
+version: "0.1.0"
+date-released: "2026-04-25"
+preferred-citation:
+  type: article
+  title: "Full conformal novelty detection"
+  authors:
+    - family-names: Lee
+      given-names: Junu
+    - family-names: Popov
+      given-names: Ilia
+    - family-names: Ren
+      given-names: Zhimei
