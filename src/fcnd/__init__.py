@@ -5,7 +5,7 @@ from .learners import BaseLearner, IsoForestLearner, OneClassSVMLearner
 from .calibration import EBHCC
 from .multiple_testing import bh, ebh
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "BaseND",

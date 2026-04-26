@@ -51,25 +51,30 @@ import numpy as np
 from fcnd import FCND, IsoForestLearner
 from fcnd.synthetic import generate_wset, gen_data
 
-# generating the synthetic dataset
-rng = np.random.default_rng(0)
-W = generate_wset(size=20, dims=10, random_state=rng)
+rng = np.random.default_rng(123)
+W = generate_wset(size=16, dims=8, random_state=rng)
 
-X_ref = gen_data(W, 80, a=1.0, random_state=rng)
+X_ref = gen_data(W, 60, a=1.0, random_state=rng)
 X_test = np.vstack([
-    gen_data(W, 45, a=1.0, random_state=rng),
-    gen_data(W, 15, a=3.0, random_state=rng),
+    gen_data(W, 30, a=1.0, random_state=rng),
+    gen_data(W, 10, a=3.5, random_state=rng),
 ])
 
-# initializing the FCND object with a Isolation Forest scorer
 detector = FCND(
-    IsoForestLearner(random_state=0, n_estimators=100),
+    IsoForestLearner(random_state=1, n_estimators=50),
     use_numba=True,
 )
-result = detector.detect(X_ref, X_test, alpha=0.1, method="ebh")
+result = detector.detect(X_ref, X_test, alpha=0.2, method="ebh")
 
 print(result.rejections)
 print(result.n_rejections)
+```
+
+Expected output:
+
+```text
+[ 1 20 31 32 34 37 39]
+7
 ```
 
 The `detect` method returns a `DetectionResult` with conformal p- or e-values, non-conformity scores, the rejection set, and basic metadata.

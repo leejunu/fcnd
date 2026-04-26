@@ -6,12 +6,8 @@ authors:
   - family-names: Lee
     given-names: Junu
     email: junulee@wharton.upenn.edu
-  - family-names: Popov
-    given-names: Ilia
-  - family-names: Ren
-    given-names: Zhimei
 license: MIT
-version: "0.1.0"
+version: "0.1.1"
 date-released: "2026-04-25"
 preferred-citation:
   type: article
