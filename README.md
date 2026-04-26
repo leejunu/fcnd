@@ -22,23 +22,16 @@ This package is for method development and is designed to fit into workflows tha
 
 ## Installation
 
-From the repository root:
+Install the package from PyPI:
 
 ```bash
-pip install -e .
+pip install fcnd
 ```
 
-For development and tests:
+For notebook examples, install the optional notebook dependencies:
 
 ```bash
-pip install -e ".[dev]"
-pytest
-```
-
-For notebook examples:
-
-```bash
-pip install -e ".[notebook]"
+pip install "fcnd[notebook]"
 ```
 
 `fcnd` supports Python 3.10, 3.11, and 3.12. The default dependency set includes `numba`, `numpy`, and `scikit-learn`; `scipy` is installed transitively by scikit-learn.
