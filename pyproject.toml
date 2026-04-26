@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fcnd"
-version = "0.1.1"
+version = "0.1.2"
 description = "Full conformal novelty detection with conformal e-values and e-BH."
 readme = "README.md"
 requires-python = ">=3.10,<3.13"

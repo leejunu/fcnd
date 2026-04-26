@@ -7,8 +7,8 @@ authors:
     given-names: Junu
     email: junulee@wharton.upenn.edu
 license: MIT
-version: "0.1.1"
-date-released: "2026-04-25"
+version: "0.1.2"
+date-released: "2026-04-26"
 preferred-citation:
   type: article
   title: "Full conformal novelty detection"
